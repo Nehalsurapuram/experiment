@@ -13,7 +13,7 @@ type Filter = "all" | "active" | "completed";
 
 const STORAGE_KEY = "todos";
 
-export default function Home(): JSX.Element {
+export default function Home() {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [text, setText] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
